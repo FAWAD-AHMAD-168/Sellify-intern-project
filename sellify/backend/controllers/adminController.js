@@ -24,6 +24,28 @@ export const getPendingSellers = async (req, res) => {
     }
 };
 
+
+export const getApprovedSellers = async (req, res) => {
+    try {
+        const approvedSellers = await SellerStatus.find({ isApproved: true })
+            .populate("seller", "fullname email");
+        res.status(200).json({ message: "Approved sellers", approvedSellers });
+    } catch (error) {
+        console.log("getApprovedSellers Error:", error);
+        res.status(500).json({ message: "Error fetching sellers" });
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
 // ✅ Approve seller
 export const approveSeller = async (req, res) => {
     try {

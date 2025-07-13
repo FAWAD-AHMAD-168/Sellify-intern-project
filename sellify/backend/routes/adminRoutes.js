@@ -2,6 +2,7 @@ import express from "express";
 import {
     getAllUsers,
     getPendingSellers,
+    getApprovedSellers,
     approveSeller,
     rejectSeller
 } from "../controllers/adminController.js";
@@ -12,6 +13,9 @@ const router = express.Router();
 
 // ✅ Admin-only routes
 router.get("/users", protect, authorizeRoles("admin"), getAllUsers);
+router.get("/approved-sellers", protect, authorizeRoles("admin"), getApprovedSellers);
+
+
 router.get("/pending-sellers", protect, authorizeRoles("admin"), getPendingSellers);
 router.put("/approve-seller/:id", protect, authorizeRoles("admin"), approveSeller);
 router.put("/reject-seller/:id", protect, authorizeRoles("admin"), rejectSeller);
