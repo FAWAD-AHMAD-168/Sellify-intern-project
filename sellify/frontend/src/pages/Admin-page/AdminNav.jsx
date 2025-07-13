@@ -31,7 +31,7 @@ const AdminNav = () => {
           Seller Requests
         </NavLink>
         <NavLink to="/admin/confirmed-sellers" className={linkClasses}>
-          Confirmed Sellers
+          Approved Sellers
         </NavLink>
       </nav>
 

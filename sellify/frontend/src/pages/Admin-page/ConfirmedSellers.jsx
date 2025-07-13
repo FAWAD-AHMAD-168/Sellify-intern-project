@@ -34,14 +34,14 @@ const ConfirmedSellers = () => {
     <div className="bg-white min-h-screen text-black">
       <AdminNavbar />
       <div className="p-6 ">
-        <h1 className="text-2xl font-bold mb-4">Confirmed Sellers</h1>
+        <h1 className="text-2xl font-bold mb-4">Approved Sellers</h1>
 
         {loading ? (
           <p>Loading sellers...</p>
         ) : approvedSellers.length === 0 ? (
           <p>No approved sellers found.</p>
         ) : (
-          <ul className="space-y-2 grid grid-cols-4 gap-4">
+          <ul className="space-y-2 grid grid-cols-4 gap-4  ">
             {approvedSellers.map((seller) => (
               <li key={seller._id} className="bg-gradient-to-r from-indigo-100 via-blue-100 to-cyan-100 border border-black p-3 rounded">
                 <p><strong>Name:</strong> {seller.seller.fullname}</p>

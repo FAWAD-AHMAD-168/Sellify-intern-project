@@ -13,6 +13,10 @@ import SellerNav from "../pages/Seller/SellerNav";
 import SDashboard from "../pages/Seller/SDashboard";
 
 
+import Products from "../pages/User/Products";
+import About from "../pages/User/About";
+
+
 
 
 
@@ -46,6 +50,12 @@ const router = createBrowserRouter([
 
   { path: "/seller/pending", element: <SellerPending /> },
   { path: "/seller/rejected", element: <SellerRejected /> },
+
+  {path:"/allproducts", element: <Products />},
+    {path:"/About-sellify", element: <About />},
+
+
+
 
  
   {

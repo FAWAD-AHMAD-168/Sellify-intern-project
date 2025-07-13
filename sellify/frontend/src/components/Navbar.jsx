@@ -38,8 +38,8 @@ const Navbar = () => {
         <NavLink to="/" className={linkClasses}>Home</NavLink>
               
 
-        <NavLink to="/productlist" className={linkClasses}>Products</NavLink>
-        <NavLink to="/about" className={linkClasses}>About</NavLink>
+        <NavLink to="/allproducts" className={linkClasses}>Products</NavLink>
+        <NavLink to="/About-sellify" className={linkClasses}>About</NavLink>
         <NavLink to="/contacts" className={linkClasses}>Contact</NavLink>
 
        </nav>
