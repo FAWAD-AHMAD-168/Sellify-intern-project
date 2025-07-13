@@ -88,7 +88,7 @@ const ProductCard = ({ product, onDelete, onUpdate }) => {
           <div className="flex justify-between pt-2">
             <button
               onClick={() => setIsEditing(true)}
-              className="px-2 py-1 border border-black bg-gray-500 text-white rounded hover:bg-gray-700 "
+              className="px-2 py-1 border border-black bg-white text-black rounded hover:bg-gray-500  hover:text-white transition-all duration-200"
             >
               Edit
             </button>

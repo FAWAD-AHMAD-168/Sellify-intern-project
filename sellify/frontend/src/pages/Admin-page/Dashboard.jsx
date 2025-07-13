@@ -1,4 +1,5 @@
 import AdminNavbar from "./AdminNav";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -29,7 +30,7 @@ const Dashboard = () => {
 
         <div className="mt-8">
           <p className="text-lg">
-            Manage seller requests <a href="/admin/seller-requests" className="underline text-black hover:text-gray-700"><b>here</b></a>.
+            Manage seller requests <Link to="/admin/seller-requests" className="underline text-black hover:text-gray-700"><b>here</b></Link>.
           </p>
         </div>
       </div>
